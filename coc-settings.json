@@ -1,0 +1,14 @@
+{
+  "coc.preferences.rootPatterns": [".git"],
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "tabnine.priority": 85,
+  "python.jediEnabled": true,
+  "python.autoUpdateLanguageServer": false,
+  "python.sortImports.args": ["-sp", "${workspaceFolder}/setup.cfg"],
+  "python.formatting.provider":"black",
+  "python.formatting.blackPath":"/usr/local/bin/black",
+  "yaml.format.enable": true,
+  "coc.preferences.formatOnSaveFiletypes": ["python"]
+}
