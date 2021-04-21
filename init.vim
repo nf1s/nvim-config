@@ -6,12 +6,12 @@ set spell
 set spelllang=en
 set spellfile=$HOME/.config/nvim/spell/en.utf-8.add
 
-let mapleader=","
+let mapleader=" "
 let NERDTreeShowHidden=1
 let g:indent_guides_enable_on_vim_startup = 1
 
-source ~/.config/nvim/ftplugin/fzf-sessions.vim
-source ~/.config/nvim/customterm/custom-term.vim
+"source ~/.config/nvim/ftplugin/fzf-sessions.vim
+"source ~/.config/nvim/customterm/custom-term.vim
 
 function! OpenTerm()
     term
@@ -23,11 +23,7 @@ filetype plugin on
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'morhetz/gruvbox'
-Plug 'scrooloose/nerdtree'
 Plug 'scrooloose/nerdcommenter'
-Plug 'jistr/vim-nerdtree-tabs'
-Plug 'Xuyuanp/nerdtree-git-plugin'
-Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
 Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
 Plug 'Yggdroot/indentLine'
@@ -44,6 +40,8 @@ Plug 'kylef/apiblueprint.vim'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'machakann/vim-highlightedyank'
 Plug 'junegunn/fzf'
+Plug 'tpope/vim-obsession'
+Plug 'dhruvasagar/vim-prosession'
 Plug 'dominickng/fzf-session.vim'
 call plug#end()
 
@@ -122,28 +120,12 @@ nmap <silent><leader>e  <Plug>(coc-type-definition)
 nmap <silent><leader>i <Plug>(coc-implementation)
 nmap <silent><leader>r <Plug>(coc-references)
 
-" Nerdtree config
-let g:NERDTreeGitStatusWithFlags = 1
-let g:NERDTreeIndicatorMapCustom = {
-    \ "Modified"  : "✹",
-    \ "Staged"    : "✚",
-    \ "Untracked" : "✭",
-    \ "Renamed"   : "➜",
-    \ "Unmerged"  : "═",
-    \ "Deleted"   : "✖",
-    \ "Dirty"     : "✗",
-    \ "Clean"     : "✔︎",
-    \ "Unknown"   : "?"
-    \ }
-
-nmap <C-b> :NERDTreeToggle<cr>
 vmap ''' <plug>NERDCommenterToggle
 nmap ''' <plug>NERDCommenterToggle
 
 " markdown config
 let g:vim_markdown_folding_disabled = 1
 let g:vim_markdown_conceal = 0
-let vim_markdown_preview_toggle=2
 let vim_markdown_preview_browser='Google Chrome'
 let vim_markdown_preview_temp_file=1
 let vim_markdown_preview_github=1
@@ -160,4 +142,3 @@ nmap <silent><leader>ds  <Plug>(pydocstring)
 " terraform config
 let g:terraform_align=1
 let g:terraform_fmt_on_save=1
-
