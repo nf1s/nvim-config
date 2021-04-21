@@ -10,8 +10,6 @@ let mapleader=" "
 let NERDTreeShowHidden=1
 let g:indent_guides_enable_on_vim_startup = 1
 
-"source ~/.config/nvim/ftplugin/fzf-sessions.vim
-"source ~/.config/nvim/customterm/custom-term.vim
 
 function! OpenTerm()
     term
@@ -42,7 +40,6 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'junegunn/fzf'
 Plug 'tpope/vim-obsession'
 Plug 'dhruvasagar/vim-prosession'
-Plug 'dominickng/fzf-session.vim'
 call plug#end()
 
 " general config
