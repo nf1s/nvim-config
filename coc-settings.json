@@ -1,14 +1,15 @@
 {
-  "coc.preferences.rootPatterns": [".git"],
+  "python.pythonPath":"${workspaceFolder}/.venv/bin/python",
+  "python.jediEnabled": true,
+  "python.formatting.provider":"black",
+  "python.formatting.blackPath":"${workspaceFolder}/.venv/bin/black",
+  "python.autoUpdateLanguageServer": false,
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
+  "python.sortImports.path": "${workspaceFolder}/.venv/bin/black",
   "tabnine.priority": 85,
-  "python.jediEnabled": true,
-  "python.autoUpdateLanguageServer": false,
-  "python.sortImports.args": ["-sp", "${workspaceFolder}/setup.cfg"],
-  "python.formatting.provider":"black",
-  "python.formatting.blackPath":"/usr/local/bin/black",
   "yaml.format.enable": true,
+  "coc.preferences.rootPatterns": [".git"],
   "coc.preferences.formatOnSaveFiletypes": ["python"]
 }
