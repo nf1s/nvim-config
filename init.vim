@@ -38,10 +38,8 @@ call plug#end()
 colorscheme gruvbox
 syntax on
 
-au BufNewFile,BufRead *.js,*.jsx,*.html,*.json,*.css,*.j2,*jinja2,*.tmpl set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
+au BufNewFile,BufRead *.js,*.jsx,*.html,*.json,*.css,*.j2,*jinja2,*.tmpl,*.md set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.vim,*.tmpl set tabstop=4 softtabstop=4 shiftwidth=4
-au BufNewFile,BufRead *.md set shiftwidth=2
-
 
 nmap <leader>_ :split<Esc>
 nmap <leader>I :vert split<Esc>
@@ -58,6 +56,10 @@ nmap <leader><Down> :wincmd j<CR>
 nmap <leader>w :wincmd w<CR>
 nmap <leader><leader> :w<CR>
 nmap <leader>q :qa<CR>
+
+" reflow current line
+map Q gqq
+vmap Q gqq
 
 " fzf config
 nmap \ :FZF<cr>
@@ -79,6 +81,7 @@ let g:airline_powerline_fonts = 1
 
 " Indent line config
 let g:indentLine_setColors = 200
+let g:indentLine_conceallevel = 0
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " syntastic config
@@ -86,8 +89,9 @@ let g:syntastic_python_python_exec = 'python3.8'
 
 " coc config
 let g:coc_global_extensions = [
-  \ 'coc-python',
+  \ 'coc-pyright',
   \ 'coc-go',
+  \ 'coc-rls',
   \ 'coc-tsserver',
   \ 'coc-html',
   \ 'coc-yaml',
@@ -104,7 +108,7 @@ command! -nargs=0 Isort :CocCommand python.sortImports
 command! -nargs=0 MdFix :CocCommand markdownlint.fixAll
 
 autocmd BufWritePost *.py :silent !Isort %
-autocmd BufWritePost *.js,*.ts :silent !Prettier %
+autocmd BufWritePost *.js,*.ts,*.json :silent !Prettier %
 autocmd BufWritePost *.md :silent !MdFix %
 
 nmap <silent><leader>d <Plug>(coc-definition)
@@ -119,6 +123,7 @@ nmap ''' <plug>NERDCommenterToggle
 let vim_markdown_preview_browser='Google Chrome'
 let vim_markdown_preview_temp_file=1
 let vim_markdown_preview_github=1
+let g:vim_markdown_folding_disabled = 1
 
 " apiblueprint config
 autocmd FileType apiblueprint nnoremap ‹ :call GenerateRefract()<cr>
