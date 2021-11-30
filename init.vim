@@ -14,6 +14,8 @@ filetype plugin on
 call plug#begin('~/.local/share/nvim/plugged')
 Plug 'morhetz/gruvbox'
 Plug 'davidhalter/jedi-vim'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'zchee/deoplete-jedi'
 Plug 'scrooloose/nerdcommenter'
 Plug 'ryanoasis/vim-devicons'
 Plug 'airblade/vim-gitgutter'
@@ -97,7 +99,11 @@ autocmd BufWritePost *.js,*.ts,*.json :silent !Prettier %
 autocmd BufWritePost *.md :silent !MdFix %
 
 " Jedi config
-let g:jedi#environment_path = "venv"
+let g:jedi#environment_path = ".venv"
+let g:jedi#completions_enabled = 0
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1
 
 " Nerd Commenter
 vmap ''' <plug>NERDCommenterToggle
