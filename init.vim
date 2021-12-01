@@ -31,9 +31,9 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'kylef/apiblueprint.vim'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'machakann/vim-highlightedyank'
-Plug 'junegunn/fzf'
-Plug 'tpope/vim-obsession'
-Plug 'dhruvasagar/vim-prosession'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'yuki-yano/fzf-preview.vim', { 'branch': 'release/rpc' }
+Plug 'dominickng/fzf-session.vim'
 call plug#end()
 
 " general config
@@ -65,7 +65,10 @@ map Q gqq
 vmap Q gqq
 
 " fzf config
+let g:fzf_session_path = $HOME . '/.vim/sessions'
 nmap \ :FZF<cr>
+nnoremap <leader>n :Session<Space>
+nnoremap <leader>s :Sessions<CR>
 
 
 " Ag config
@@ -89,14 +92,6 @@ let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " syntastic config
 let g:syntastic_python_python_exec = 'python3.8'
-
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
-command! -nargs=0 Isort :CocCommand python.sortImports
-command! -nargs=0 MdFix :CocCommand markdownlint.fixAll
-
-autocmd BufWritePost *.py :silent !Isort %
-autocmd BufWritePost *.js,*.ts,*.json :silent !Prettier %
-autocmd BufWritePost *.md :silent !MdFix %
 
 " Jedi config
 let g:jedi#environment_path = ".venv"
