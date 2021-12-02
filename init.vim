@@ -63,6 +63,7 @@ vmap Q gqq
 
 " fzf config
 nmap \ :FZF<cr>
+nnoremap <leader>s :call fzf#run({'source': prosession#ListSessions(), 'sink': 'Prosession', 'down': '30%'})<cr>
 
 
 " Ag config

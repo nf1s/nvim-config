@@ -9,7 +9,7 @@
   "yaml.format.enable": true,
   "coc.preferences.rootPatterns": [".git"],
   "coc.preferences.formatOnSaveFiletypes": ["python"],
-  "coc.preferences.willSaveHandlerTimeout": 5000,
+  "coc.preferences.willSaveHandlerTimeout": 3000,
   "markdownlint.config": {
     "default": true,
     "line_length": false
