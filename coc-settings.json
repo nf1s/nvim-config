@@ -1,0 +1,17 @@
+{
+  "python.pythonPath": "${workspaceFolder}/.venv/bin/python",
+  "python.formatting.provider": "black",
+  "python.formatting.blackPath": "${workspaceFolder}/.venv/bin/black",
+  "python.linting.pylintEnabled": false,
+  "python.linting.flake8Enabled": true,
+  "python.linting.enabled": true,
+  "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
+  "yaml.format.enable": true,
+  "coc.preferences.rootPatterns": [".git"],
+  "coc.preferences.formatOnSaveFiletypes": ["python"],
+  "coc.preferences.willSaveHandlerTimeout": 5000,
+  "markdownlint.config": {
+    "default": true,
+    "line_length": false
+  }
+}
