@@ -30,8 +30,7 @@ Plug 'kylef/apiblueprint.vim'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'machakann/vim-highlightedyank'
 Plug 'junegunn/fzf'
-Plug 'tpope/vim-obsession'
-Plug 'dhruvasagar/vim-prosession'
+Plug 'thaerkh/vim-workspace'
 call plug#end()
 
 " general config
@@ -61,9 +60,14 @@ nmap <leader>q :qa<CR>
 map Q gqq
 vmap Q gqq
 
+" vim-workspace
+let g:workspace_autocreate = 1
+let g:workspace_session_directory = $HOME . '/.vim/workspaces/'
+
+
 " fzf config
 nmap \ :FZF<cr>
-nnoremap <leader>s :call fzf#run({'source': prosession#ListSessions(), 'sink': 'Prosession', 'down': '30%'})<cr>
+"nnoremap <leader>s :call fzf#run({'source': prosession#ListSessions(), 'sink': 'Prosession','options':'--preview', 'window': {'width':0.9, 'height':0.6, 'relative': v:true}})<cr>
 
 
 " Ag config
