@@ -6,6 +6,7 @@
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
   "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
+  "snippets.ultisnips.enable": false,
   "yaml.format.enable": true,
   "coc.preferences.rootPatterns": [".git"],
   "coc.preferences.formatOnSaveFiletypes": ["python"],

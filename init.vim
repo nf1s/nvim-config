@@ -31,6 +31,7 @@ Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'machakann/vim-highlightedyank'
 Plug 'junegunn/fzf'
 Plug 'thaerkh/vim-workspace'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 " general config
@@ -55,6 +56,8 @@ nmap <leader><Down> :wincmd j<CR>
 nmap <leader>w :wincmd w<CR>
 nmap <leader><leader> :w<CR>
 nmap <leader>q :qa<CR>
+nmap <leader>t :tabn<CR>
+nmap <leader>T :tabp<CR>
 
 " reflow current line
 map Q gqq
@@ -90,7 +93,7 @@ let g:indentLine_conceallevel = 0
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " syntastic config
-let g:syntastic_python_python_exec = 'python3.8'
+let g:syntastic_python_python_exec = 'python3.9'
 
 " coc config
 let g:coc_global_extensions = [
@@ -103,9 +106,9 @@ let g:coc_global_extensions = [
   \ 'coc-snippets',
   \ 'coc-pairs',
   \ 'coc-eslint',
-  \ 'coc-prettier', 
+  \ 'coc-prettier',
   \ 'coc-json', 
-  \ 'coc-markdownlint', 
+  \ 'coc-markdownlint',
   \ ]
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
@@ -120,6 +123,7 @@ nmap <silent><leader>d <Plug>(coc-definition)
 nmap <silent><leader>e  <Plug>(coc-type-definition)
 nmap <silent><leader>i <Plug>(coc-implementation)
 nmap <silent><leader>r <Plug>(coc-references)
+nmap <leader>n <Plug>(coc-rename)
 
 vmap ''' <plug>NERDCommenterToggle
 nmap ''' <plug>NERDCommenterToggle
