@@ -120,10 +120,10 @@ autocmd BufWritePost *.js,*.ts,*.json :silent !Prettier %
 autocmd BufWritePost *.md :silent !MdFix %
 
 nmap <silent><leader>d <Plug>(coc-definition)
-nmap <silent><leader>e  <Plug>(coc-type-definition)
+nmap <silent><leader>w  <Plug>(coc-type-definition)
 nmap <silent><leader>i <Plug>(coc-implementation)
 nmap <silent><leader>r <Plug>(coc-references)
-nmap <leader>n <Plug>(coc-rename)
+nmap <leader>e <Plug>(coc-rename)
 
 vmap ''' <plug>NERDCommenterToggle
 nmap ''' <plug>NERDCommenterToggle
