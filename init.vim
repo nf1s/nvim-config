@@ -29,6 +29,7 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 Plug 'kylef/apiblueprint.vim'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'machakann/vim-highlightedyank'
+Plug 'dhruvasagar/vim-table-mode'
 Plug 'junegunn/fzf'
 Plug 'thaerkh/vim-workspace'
 Plug 'vimwiki/vimwiki'
@@ -71,6 +72,12 @@ let g:workspace_session_directory = $HOME . '/.vim/workspaces/'
 " fzf config
 nmap \ :FZF<cr>
 "nnoremap <leader>s :call fzf#run({'source': prosession#ListSessions(), 'sink': 'Prosession','options':'--preview', 'window': {'width':0.9, 'height':0.6, 'relative': v:true}})<cr>
+
+" Vim Table Mode
+let g:table_mode_header_fillchar='='
+let g:table_mode_corner='|'
+
+nmap <leader>tm :TableModeToggle<CR>
 
 
 " Ag config

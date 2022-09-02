@@ -9,10 +9,16 @@
   "snippets.ultisnips.enable": false,
   "yaml.format.enable": true,
   "coc.preferences.rootPatterns": [".git"],
-  "coc.preferences.formatOnSaveFiletypes": ["python"],
+  "coc.preferences.formatOnSaveFiletypes": ["python", "go"],
   "coc.preferences.willSaveHandlerTimeout": 3000,
   "markdownlint.config": {
     "default": true,
     "line_length": false
-  }
+  },
+  "go": {
+    "command": "gopls",
+    "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+    "trace.server": "verbose",
+    "filetypes": ["go"],
+    }
 }
