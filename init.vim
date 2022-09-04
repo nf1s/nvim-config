@@ -41,6 +41,7 @@ syntax on
 
 au BufNewFile,BufRead *.js,*.jsx,*.html,*.json,*.css,*.j2,*jinja2,*.tmpl,*.md set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.vim,*.tmpl set tabstop=4 softtabstop=4 shiftwidth=4
+au BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 
 nmap <leader>_ :split<Esc>
 nmap <leader>I :vert split<Esc>
