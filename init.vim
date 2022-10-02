@@ -28,8 +28,6 @@ Plug 'kylef/apiblueprint.vim'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'machakann/vim-highlightedyank'
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-Plug 'junegunn/fzf.vim'
 Plug 'thaerkh/vim-workspace'
 Plug 'vimwiki/vimwiki'
 Plug 'nvim-lua/plenary.nvim'
@@ -44,9 +42,6 @@ call plug#end()
 " general config
 colorscheme gruvbox
 syntax on
-
-" Octo
-lua require"octo".setup()
 
 au BufNewFile,BufRead *.js,*.jsx,*.html,*.json,*.css,*.j2,*jinja2,*.tmpl,*.md set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.vim,*.tmpl set tabstop=4 softtabstop=4 shiftwidth=4
@@ -67,6 +62,9 @@ nmap <leader><leader> :w<CR>
 nmap <leader>q :qa<CR>
 nmap <leader>t :tabn<CR>
 nmap <leader>T :tabp<CR>
+
+" Octo
+lua require"octo".setup()
 
 " reflow current line
 map Q gqq
