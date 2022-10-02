@@ -1,7 +1,7 @@
 set encoding=utf-8
 set number
 set noswapfile
-set clipboard=unnamed
+set clipboard+=unnamed
 set spell
 set spelllang=en
 set spellfile=$HOME/.config/nvim/spell/en.utf-8.add
@@ -12,7 +12,6 @@ let g:indent_guides_enable_on_vim_startup = 1
 filetype plugin on
 
 call plug#begin('~/.local/share/nvim/plugged')
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'morhetz/gruvbox'
 Plug 'scrooloose/nerdcommenter'
 Plug 'ryanoasis/vim-devicons'
@@ -21,8 +20,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'vim-syntastic/syntastic'
 Plug 'hashivim/vim-terraform'
 Plug 'sheerun/vim-polyglot'
-Plug 'HerringtonDarkholme/yats.vim' 
-Plug 'rking/ag.vim'
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'liuchengxu/eleline.vim'
 Plug 'tpope/vim-fugitive'
 Plug 'JamshedVesuna/vim-markdown-preview'
@@ -30,14 +28,25 @@ Plug 'kylef/apiblueprint.vim'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'machakann/vim-highlightedyank'
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'thaerkh/vim-workspace'
 Plug 'vimwiki/vimwiki'
+Plug 'nvim-lua/plenary.nvim'
+Plug 'nvim-telescope/telescope.nvim'
+Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
+Plug 'kyazdani42/nvim-web-devicons'
+Plug 'pwntester/octo.nvim'
+Plug 'prabirshrestha/vim-lsp'
 call plug#end()
 
 " general config
 colorscheme gruvbox
 syntax on
+
+" Octo
+lua require"octo".setup()
 
 au BufNewFile,BufRead *.js,*.jsx,*.html,*.json,*.css,*.j2,*jinja2,*.tmpl,*.md set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.vim,*.tmpl set tabstop=4 softtabstop=4 shiftwidth=4
@@ -46,10 +55,8 @@ au BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organize
 nmap <leader>_ :split<Esc>
 nmap <leader>I :vert split<Esc>
 
-nmap œ o<Esc>
-nmap Œ O<Esc>
-nmap ++ :m-2<CR>
-nmap -- :m+1<CR>
+nmap <A-Up> :m-2<CR>
+nmap <A-Down> :m+1<CR>
 nmap <leader>y :%y<CR>
 nmap <leader><Right> :wincmd l<CR>
 nmap <leader><Left> :wincmd h<CR>
@@ -67,23 +74,17 @@ vmap Q gqq
 
 " vim-workspace
 let g:workspace_autocreate = 1
-let g:workspace_session_directory = $HOME . '/.vim/workspaces/'
+let g:workspace_session_directory = $HOME . '/.config/nvim/workspaces/'
 
-
-" fzf config
-nmap \ :FZF<cr>
-"nnoremap <leader>s :call fzf#run({'source': prosession#ListSessions(), 'sink': 'Prosession','options':'--preview', 'window': {'width':0.9, 'height':0.6, 'relative': v:true}})<cr>
+" Telescope configuration
+nnoremap \ <cmd>Telescope find_files hidden=true<cr>
+nnoremap <leader>f <cmd>Telescope live_grep hidden=true<cr>
 
 " Vim Table Mode
 let g:table_mode_header_fillchar='='
 let g:table_mode_corner='|'
 
 nmap <leader>tm :TableModeToggle<CR>
-
-
-" Ag config
-let g:ag_working_path_mode="r"
-nmap <leader>f :Ag<Space>
 
 " Highlightedyank config
 if !exists('##TextYankPost')
@@ -101,37 +102,7 @@ let g:indentLine_conceallevel = 0
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " syntastic config
-let g:syntastic_python_python_exec = 'python3.9'
-
-" coc config
-let g:coc_global_extensions = [
-  \ 'coc-pyright',
-  \ 'coc-go',
-  \ 'coc-rls',
-  \ 'coc-tsserver',
-  \ 'coc-html',
-  \ 'coc-yaml',
-  \ 'coc-snippets',
-  \ 'coc-pairs',
-  \ 'coc-eslint',
-  \ 'coc-prettier',
-  \ 'coc-json', 
-  \ 'coc-markdownlint',
-  \ ]
-
-command! -nargs=0 Prettier :CocCommand prettier.formatFile
-command! -nargs=0 Isort :CocCommand python.sortImports
-command! -nargs=0 MdFix :CocCommand markdownlint.fixAll
-
-autocmd BufWritePost *.py :silent !Isort %
-autocmd BufWritePost *.js,*.ts,*.json :silent !Prettier %
-autocmd BufWritePost *.md :silent !MdFix %
-
-nmap <silent><leader>d <Plug>(coc-definition)
-nmap <silent><leader>w  <Plug>(coc-type-definition)
-nmap <silent><leader>i <Plug>(coc-implementation)
-nmap <silent><leader>r <Plug>(coc-references)
-nmap <leader>e <Plug>(coc-rename)
+let g:syntastic_python_python_exec = 'python3.10'
 
 vmap ''' <plug>NERDCommenterToggle
 nmap ''' <plug>NERDCommenterToggle
