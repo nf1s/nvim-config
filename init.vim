@@ -21,7 +21,7 @@ Plug 'Yggdroot/indentLine'
 Plug 'vim-syntastic/syntastic'
 Plug 'hashivim/vim-terraform'
 Plug 'sheerun/vim-polyglot'
-Plug 'HerringtonDarkholme/yats.vim' 
+Plug 'HerringtonDarkholme/yats.vim'
 Plug 'rking/ag.vim'
 Plug 'liuchengxu/eleline.vim'
 Plug 'tpope/vim-fugitive'
@@ -30,7 +30,8 @@ Plug 'kylef/apiblueprint.vim'
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'machakann/vim-highlightedyank'
 Plug 'dhruvasagar/vim-table-mode'
-Plug 'junegunn/fzf'
+Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+Plug 'junegunn/fzf.vim'
 Plug 'thaerkh/vim-workspace'
 Plug 'vimwiki/vimwiki'
 call plug#end()
@@ -69,21 +70,18 @@ vmap Q gqq
 let g:workspace_autocreate = 1
 let g:workspace_session_directory = $HOME . '/.vim/workspaces/'
 
-
 " fzf config
-nmap \ :FZF<cr>
+nmap \ :Files<cr>
 "nnoremap <leader>s :call fzf#run({'source': prosession#ListSessions(), 'sink': 'Prosession','options':'--preview', 'window': {'width':0.9, 'height':0.6, 'relative': v:true}})<cr>
+
+" Rg config
+nmap <leader>f :Rg<Space>
 
 " Vim Table Mode
 let g:table_mode_header_fillchar='='
 let g:table_mode_corner='|'
 
 nmap <leader>tm :TableModeToggle<CR>
-
-
-" Ag config
-let g:ag_working_path_mode="r"
-nmap <leader>f :Ag<Space>
 
 " Highlightedyank config
 if !exists('##TextYankPost')
@@ -101,7 +99,7 @@ let g:indentLine_conceallevel = 0
 let g:indentLine_char_list = ['|', '¦', '┆', '┊']
 
 " syntastic config
-let g:syntastic_python_python_exec = 'python3.9'
+let g:syntastic_python_python_exec = 'python3.10'
 
 " coc config
 let g:coc_global_extensions = [
@@ -115,9 +113,11 @@ let g:coc_global_extensions = [
   \ 'coc-pairs',
   \ 'coc-eslint',
   \ 'coc-prettier',
-  \ 'coc-json', 
+  \ 'coc-json',
   \ 'coc-markdownlint',
   \ ]
+
+inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 command! -nargs=0 Isort :CocCommand python.sortImports
