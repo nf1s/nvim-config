@@ -14,4 +14,4 @@ source ~/.config/nvim/plugins/vim-pydocstring.vim
 source ~/.config/nvim/plugins/vim-terraform.vim
 source ~/.config/nvim/plugins/telescope.vim
 source ~/.config/nvim/plugins/octo.vim
-source ~/.config/nvim/plugins/material.vim
+source ~/.config/nvim/plugins/gruvbox.vim
