@@ -18,11 +18,17 @@ Plug 'machakann/vim-highlightedyank'
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'thaerkh/vim-workspace'
 Plug 'vimwiki/vimwiki'
+Plug 'marko-cerovac/material.nvim'
+Plug 'williamboman/mason.nvim'
+
+" Telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
+Plug 'fannheyward/telescope-coc.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+
+" Octo
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'pwntester/octo.nvim'
-Plug 'marko-cerovac/material.nvim'
 call plug#end()
