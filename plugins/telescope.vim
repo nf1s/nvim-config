@@ -3,8 +3,8 @@ lua << EOF
 require('telescope').setup {
   defaults = {
     layout_config = {
-      vertical = { width = 0.8 },
-      horizontal = { width = 0.8 },
+      vertical = { width = 0.9 },
+      horizontal = { width = 0.9 },
 		}
 	},
   extensions = {
@@ -23,7 +23,7 @@ require('telescope').setup {
 require('telescope').load_extension('fzf')
 require('telescope').load_extension('coc')
 EOF
-nnoremap \ <cmd>Telescope find_files hidden=true layout_strategy=horizontal<cr>
-nnoremap <leader>f <cmd>Telescope live_grep hidden=true layout_strategy=horizontal<cr>
-nnoremap <leader>d <cmd>Telescope coc definitions<cr>
-nnoremap <leader>r <cmd>Telescope coc references<cr>
+nnoremap \ <cmd>Telescope find_files hidden=true layout_strategy=vertical<cr>
+nnoremap <leader>f <cmd>Telescope live_grep hidden=true layout_strategy=vertical<cr>
+nnoremap <leader>d <cmd>Telescope coc definitions layout_strategy=vertical<cr>
+nnoremap <leader>r <cmd>Telescope coc references layout_strategy=vertical<cr>
