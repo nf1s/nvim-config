@@ -2,11 +2,8 @@
 let g:coc_global_extensions = [
   \ 'coc-pyright',
   \ 'coc-go',
-  \ 'coc-rls',
-  \ 'coc-tsserver',
   \ 'coc-html',
   \ 'coc-yaml',
-  \ 'coc-snippets',
   \ 'coc-pairs',
   \ 'coc-eslint',
   \ 'coc-prettier',

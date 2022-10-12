@@ -8,7 +8,6 @@ set spellfile=$HOME/.config/nvim/spell/en.utf-8.add
 
 let mapleader=" "
 let g:indent_guides_enable_on_vim_startup = 1
-syntax on
 
 au BufNewFile,BufRead *.js,*.jsx,*.html,*.json,*.css,*.j2,*jinja2,*.tmpl,*.md set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.vim,*.tmpl set tabstop=4 softtabstop=4 shiftwidth=4

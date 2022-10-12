@@ -1,25 +1,38 @@
 filetype plugin on
 call plug#begin('~/.local/share/nvim/plugged')
+
+" Language server
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
+
+" Theme
 Plug 'morhetz/gruvbox'
-Plug 'scrooloose/nerdcommenter'
-Plug 'ryanoasis/vim-devicons'
-Plug 'airblade/vim-gitgutter'
-Plug 'Yggdroot/indentLine'
-Plug 'vim-syntastic/syntastic'
-Plug 'hashivim/vim-terraform'
-Plug 'sheerun/vim-polyglot'
-Plug 'HerringtonDarkholme/yats.vim'
+
+" Status Line
 Plug 'liuchengxu/eleline.vim'
-Plug 'tpope/vim-fugitive'
-Plug 'JamshedVesuna/vim-markdown-preview'
-Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
-Plug 'machakann/vim-highlightedyank'
-Plug 'dhruvasagar/vim-table-mode'
+
+" Vim session and .undodir manager
 Plug 'thaerkh/vim-workspace'
+
+" Vimwiki
 Plug 'vimwiki/vimwiki'
-Plug 'marko-cerovac/material.nvim'
-Plug 'williamboman/mason.nvim'
+
+" Highlight Yank
+Plug 'machakann/vim-highlightedyank'
+
+" Vim table mode
+Plug 'dhruvasagar/vim-table-mode'
+
+" Nerd Commenter
+Plug 'scrooloose/nerdcommenter'
+
+" devicons -> file icons
+Plug 'ryanoasis/vim-devicons'
+
+" Markdown Preview
+Plug 'JamshedVesuna/vim-markdown-preview'
+
+" Python pydocstring
+Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 
 " Telescope
 Plug 'nvim-lua/plenary.nvim'

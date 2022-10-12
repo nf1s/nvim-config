@@ -2,5 +2,5 @@
 lua require"octo".setup()
 
 
-nmap p :Octo pr list<cr>
-nmap pr :Octo pr diff<cr>
+nmap <leader>pr :Octo pr list<cr>
+nmap <leader>pd :Octo pr diff<cr>
