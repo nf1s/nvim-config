@@ -3,6 +3,7 @@ source ~/.config/nvim/plugins.vim
 
 " Plugin config
 source ~/.config/nvim/plugins/coc.vim
+source ~/.config/nvim/plugins/gitsigns.vim
 source ~/.config/nvim/plugins/vim-workspace.vim
 source ~/.config/nvim/plugins/vim-table-mode.vim
 source ~/.config/nvim/plugins/vim-highlightedyank.vim

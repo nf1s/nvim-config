@@ -4,6 +4,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Language server
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Git
+Plug 'lewis6991/gitsigns.nvim'
+
 " Theme
 Plug 'morhetz/gruvbox'
 
@@ -33,6 +36,7 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 
 " Python pydocstring
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
+
 
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
