@@ -6,19 +6,25 @@
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
   "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
-  "snippets.ultisnips.enable": false,
   "yaml.format.enable": true,
   "coc.preferences.rootPatterns": [".git"],
   "coc.preferences.formatOnSaveFiletypes": ["python", "go"],
   "coc.preferences.willSaveHandlerTimeout": 3000,
+  "diagnostic.checkCurrentLine": true,
+  "diagnostic.errorSign": "✖",
+  "diagnostic.warningSign": "⚠",
+  "diagnostic.infoSign": "●",
+  "diagnostic.hintSign": "○",
   "markdownlint.config": {
     "default": true,
     "line_length": false
   },
-  "go": {
-    "command": "gopls",
-    "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
-    "trace.server": "verbose",
-    "filetypes": ["go"]
+  "languageserver": {
+    "golang": {
+      "command": "gopls",
+      "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
+      "trace.server": "verbose",
+      "filetypes": ["go"]
+      }
     }
 }
