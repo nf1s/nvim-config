@@ -37,6 +37,9 @@ Plug 'JamshedVesuna/vim-markdown-preview'
 " Python pydocstring
 Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 
+" Vim Terraform
+Plug 'hashivim/vim-terraform'
+
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
@@ -46,4 +49,7 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 " Octo
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'pwntester/octo.nvim'
+
+" Justfile
+Plug 'vmchale/just-vim'
 call plug#end()
