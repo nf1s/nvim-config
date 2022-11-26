@@ -18,8 +18,8 @@ nmap <leader>I :vert split<Esc>
 
 nmap œ o<Esc>
 nmap Œ O<Esc>
-nmap ++ :m-2<CR>
-nmap -- :m+1<CR>
+nmap <A-Up> :m-2<CR>
+nmap <A-Down> :m+1<CR>
 nmap <leader>y :%y<CR>
 nmap <leader><Right> :wincmd l<CR>
 nmap <leader><Left> :wincmd h<CR>
