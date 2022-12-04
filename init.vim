@@ -12,4 +12,5 @@ source ~/.config/nvim/plugins/vim-markdown-preview.vim
 source ~/.config/nvim/plugins/vim-pydocstring.vim
 source ~/.config/nvim/plugins/telescope.vim
 source ~/.config/nvim/plugins/octo.vim
-source ~/.config/nvim/plugins/gruvbox.vim
+source ~/.config/nvim/plugins/treesitter.vim
+source ~/.config/nvim/plugins/dracula.vim
