@@ -5,6 +5,7 @@ set clipboard=unnamed
 set spell
 set spelllang=en
 set spellfile=$HOME/.config/nvim/spell/en.utf-8.add
+set mouse=
 
 let mapleader=" "
 let g:indent_guides_enable_on_vim_startup = 1
