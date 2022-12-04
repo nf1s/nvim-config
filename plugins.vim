@@ -9,6 +9,7 @@ Plug 'lewis6991/gitsigns.nvim'
 
 " Theme
 Plug 'morhetz/gruvbox'
+Plug 'Mofiqul/dracula.nvim'
 
 " Status Line
 Plug 'liuchengxu/eleline.vim'
@@ -39,6 +40,9 @@ Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 
 " Vim Terraform
 Plug 'hashivim/vim-terraform'
+
+" Treesitter
+Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
