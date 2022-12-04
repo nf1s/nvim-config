@@ -23,6 +23,6 @@ require('telescope').setup {
 require('telescope').load_extension('fzf')
 require('telescope').load_extension('coc')
 EOF
-nnoremap \ <cmd>Telescope find_files hidden=true layout_strategy=vertical<cr>
-nnoremap <leader>f <cmd>Telescope live_grep hidden=true layout_strategy=vertical<cr>
+nnoremap <leader>f <cmd>Telescope find_files hidden=true layout_strategy=vertical<cr>
+nnoremap <leader>g <cmd>Telescope live_grep hidden=true layout_strategy=vertical<cr>
 nnoremap <leader>r <cmd>Telescope coc references layout_strategy=vertical<cr>
