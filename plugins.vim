@@ -10,6 +10,7 @@ Plug 'lewis6991/gitsigns.nvim'
 " Theme
 Plug 'morhetz/gruvbox'
 Plug 'Mofiqul/dracula.nvim'
+Plug 'navarasu/onedark.nvim'
 
 " Status Line
 Plug 'liuchengxu/eleline.vim'

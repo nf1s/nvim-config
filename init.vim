@@ -13,4 +13,4 @@ source ~/.config/nvim/plugins/vim-pydocstring.vim
 source ~/.config/nvim/plugins/telescope.vim
 source ~/.config/nvim/plugins/octo.vim
 source ~/.config/nvim/plugins/treesitter.vim
-source ~/.config/nvim/plugins/dracula.vim
+source ~/.config/nvim/plugins/onedark.vim
