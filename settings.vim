@@ -35,6 +35,6 @@ nmap <leader>q :qa<CR>
 nmap <leader>t :tabn<CR>
 nmap <leader>T :tabp<CR>
 
-" reflow current line
+"Reflow current line
 map Q gqq
 vmap Q gqq
