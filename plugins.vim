@@ -55,6 +55,4 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'kyazdani42/nvim-web-devicons'
 Plug 'pwntester/octo.nvim'
 
-" Justfile
-Plug 'vmchale/just-vim'
 call plug#end()

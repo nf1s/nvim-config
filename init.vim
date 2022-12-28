@@ -1,16 +1,17 @@
-source ~/.config/nvim/settings.vim
-source ~/.config/nvim/plugins.vim
+" settings and plugins
+runtime settings.vim
+runtime plugins.vim
 
 " Plugin config
-source ~/.config/nvim/plugins/coc.vim
-source ~/.config/nvim/plugins/gitsigns.vim
-source ~/.config/nvim/plugins/vim-workspace.vim
-source ~/.config/nvim/plugins/vim-table-mode.vim
-source ~/.config/nvim/plugins/vim-highlightedyank.vim
-source ~/.config/nvim/plugins/eleline.vim
-source ~/.config/nvim/plugins/vim-markdown-preview.vim
-source ~/.config/nvim/plugins/vim-pydocstring.vim
-source ~/.config/nvim/plugins/telescope.vim
-source ~/.config/nvim/plugins/octo.vim
-source ~/.config/nvim/plugins/treesitter.vim
-source ~/.config/nvim/plugins/onedark.vim
+runtime plugins/coc.vim
+runtime plugins/gitsigns.vim
+runtime plugins/vim-workspace.vim
+runtime plugins/vim-table-mode.vim
+runtime plugins/vim-highlightedyank.vim
+runtime plugins/eleline.vim
+runtime plugins/vim-markdown-preview.vim
+runtime plugins/vim-pydocstring.vim
+runtime plugins/telescope.vim
+runtime plugins/octo.vim
+runtime plugins/treesitter.vim
+runtime plugins/onedark.vim
