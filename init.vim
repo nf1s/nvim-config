@@ -14,4 +14,4 @@ runtime plugins/vim-pydocstring.vim
 runtime plugins/telescope.vim
 runtime plugins/octo.vim
 runtime plugins/treesitter.vim
-runtime plugins/onedark.vim
+runtime plugins/rose-pine.vim
