@@ -94,3 +94,12 @@ denycreatebranch
 sha1
 colorscheme
 rosepinetheme
+ADRs
+ADR
+Typer
+sanic
+pydantic
+FastAPI
+cli
+cronjob
+pgsql
