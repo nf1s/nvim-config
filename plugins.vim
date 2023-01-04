@@ -44,9 +44,10 @@ Plug 'heavenshell/vim-pydocstring', { 'do': 'make install' }
 Plug 'hashivim/vim-terraform'
 
 " Treesitter
-Plug 'IndianBoy42/tree-sitter-just'
 Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
+" Vim just
+Plug 'NoahTheDuke/vim-just'
 
 " Telescope
 Plug 'nvim-lua/plenary.nvim'

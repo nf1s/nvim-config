@@ -6,9 +6,11 @@ set spell
 set spelllang=en
 set spellfile=$HOME/.config/nvim/spell/en.utf-8.add
 set mouse=
-hi CursorLineNr guifg=#af00af
 set cursorline
 set cursorlineopt=number
+
+hi CursorLineNr guifg=#af00af
+xnoremap r "_dP
 
 let mapleader=" "
 let g:indent_guides_enable_on_vim_startup = 1
