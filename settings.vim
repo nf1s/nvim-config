@@ -17,7 +17,6 @@ let g:indent_guides_enable_on_vim_startup = 1
 
 au BufNewFile,BufRead *.js,*.jsx,*.html,*.json,*.css,*.j2,*jinja2,*.tmpl,*.md,Makefile,Justfile,*zsh,*sh set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.vim,*.tmpl set tabstop=4 softtabstop=4 shiftwidth=4
-au BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 
 nmap <leader>_ :split<Esc>
 nmap <leader>I :vert split<Esc>

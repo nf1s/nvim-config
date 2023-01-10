@@ -103,3 +103,6 @@ FastAPI
 cli
 cronjob
 pgsql
+tmpl
+datetime
+APIRouter

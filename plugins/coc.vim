@@ -20,6 +20,7 @@ command! -nargs=0 MdFix :CocCommand markdownlint.fixAll
 autocmd BufWritePost *.py :silent !Isort %
 autocmd BufWritePost *.js,*.ts,*.json :silent !Prettier %
 autocmd BufWritePost *.md :silent !MdFix %
+autocmd BufWritePre *.go :silent call CocAction('runCommand', 'editor.action.organizeImport')
 
 nmap <silent><leader>d <Plug>(coc-definition)
 nmap <silent><leader>w  <Plug>(coc-type-definition)
