@@ -8,9 +8,6 @@ Plug 'neoclide/coc.nvim', {'branch': 'release'}
 Plug 'lewis6991/gitsigns.nvim'
 
 " Theme
-Plug 'morhetz/gruvbox'
-Plug 'Mofiqul/dracula.nvim'
-Plug 'navarasu/onedark.nvim'
 Plug 'rose-pine/neovim'
 
 " Status Line
