@@ -11,7 +11,7 @@ Plug 'lewis6991/gitsigns.nvim'
 Plug 'rose-pine/neovim'
 
 " Status Line
-Plug 'liuchengxu/eleline.vim'
+Plug 'nvim-lualine/lualine.nvim'
 
 " Vim session and .undodir manager
 Plug 'thaerkh/vim-workspace'
@@ -30,6 +30,7 @@ Plug 'scrooloose/nerdcommenter'
 
 " devicons -> file icons
 Plug 'ryanoasis/vim-devicons'
+Plug 'kyazdani42/nvim-web-devicons'
 
 " Markdown Preview
 Plug 'JamshedVesuna/vim-markdown-preview'
@@ -52,8 +53,8 @@ Plug 'nvim-telescope/telescope.nvim'
 Plug 'fannheyward/telescope-coc.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 
-" Octo
-Plug 'kyazdani42/nvim-web-devicons'
-Plug 'pwntester/octo.nvim'
+" True colors
+Plug 'tpope/vim-sensible'
+Plug 'lifepillar/vim-solarized8'
 
 call plug#end()

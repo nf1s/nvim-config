@@ -7,7 +7,7 @@ end
 
 require('lualine').setup{
   options = {
-    theme = 'gruvbox'
+    theme = 'rose-pine'
   },
   sections = {
     lualine_b = {'branch'},

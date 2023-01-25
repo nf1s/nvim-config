@@ -2,6 +2,7 @@
 let g:coc_global_extensions = [
   \ 'coc-pyright',
   \ 'coc-go',
+  \ 'coc-rust-analyzer',
   \ 'coc-html',
   \ 'coc-yaml',
   \ 'coc-pairs',

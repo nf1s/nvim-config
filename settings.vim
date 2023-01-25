@@ -8,6 +8,11 @@ set spellfile=$HOME/.config/nvim/spell/en.utf-8.add
 set mouse=
 set cursorline
 set cursorlineopt=number
+set termguicolors
+let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
+let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
+
+set background=dark
 
 hi CursorLineNr guifg=#af00af
 xnoremap r "_dP
