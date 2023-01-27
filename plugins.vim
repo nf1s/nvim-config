@@ -4,6 +4,9 @@ call plug#begin('~/.local/share/nvim/plugged')
 " Language server
 Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
+" Tmux Navigator
+Plug 'christoomey/vim-tmux-navigator'
+
 " Git
 Plug 'lewis6991/gitsigns.nvim'
 
@@ -52,9 +55,5 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'fannheyward/telescope-coc.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
-
-" True colors
-Plug 'tpope/vim-sensible'
-Plug 'lifepillar/vim-solarized8'
 
 call plug#end()

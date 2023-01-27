@@ -31,11 +31,11 @@ nmap Œ O<Esc>
 nmap <A-Up> :m-2<CR>
 nmap <A-Down> :m+1<CR>
 nmap <leader>y :%y<CR>
-nmap <leader><Right> :wincmd l<CR>
-nmap <leader><Left> :wincmd h<CR>
-nmap <leader><Up> :wincmd k<CR>
-nmap <leader><Down> :wincmd j<CR>
-nmap <leader>w :wincmd w<CR>
+noremap <Up> <Nop>
+noremap <Down> <Nop>
+noremap <Left> <Nop>
+noremap <Right> <Nop>
+nmap <C-w> :wincmd w<CR>
 nmap <leader><leader> :w<CR>
 nmap <leader>q :qa<CR>
 nmap <leader>t :tabn<CR>
