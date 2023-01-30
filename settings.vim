@@ -53,4 +53,3 @@ noremap <silent> <C-Left> :<C-U>TmuxNavigateLeft<cr>
 noremap <silent> <C-Down> :<C-U>TmuxNavigateDown<cr>
 noremap <silent> <C-Up> :<C-U>TmuxNavigateUp<cr>
 noremap <silent> <C-Right> :<C-U>TmuxNavigateRight<cr>
-noremap <silent> <C-l> :<C-U>TmuxNavigatePrevious<cr>
