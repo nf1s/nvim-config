@@ -16,6 +16,9 @@ Plug 'rose-pine/neovim'
 " Status Line
 Plug 'nvim-lualine/lualine.nvim'
 
+" Tint
+Plug 'levouh/tint.nvim'
+
 " Vim session and .undodir manager
 Plug 'thaerkh/vim-workspace'
 

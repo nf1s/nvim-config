@@ -5,6 +5,7 @@ runtime plugins.vim
 " Plugin config
 runtime plugins/coc.vim
 runtime plugins/gitsigns.vim
+runtime plugins/tint.vim
 runtime plugins/vim-workspace.vim
 runtime plugins/vim-table-mode.vim
 runtime plugins/vim-highlightedyank.vim
