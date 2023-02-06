@@ -6,6 +6,8 @@ runtime plugins.vim
 runtime plugins/coc.vim
 runtime plugins/gitsigns.vim
 runtime plugins/tint.vim
+runtime plugins/vimwiki.vim
+runtime plugins/vim-tmux-navigator.vim
 runtime plugins/vim-workspace.vim
 runtime plugins/vim-table-mode.vim
 runtime plugins/vim-highlightedyank.vim
