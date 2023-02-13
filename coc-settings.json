@@ -26,5 +26,16 @@
       "trace.server": "verbose",
       "filetypes": ["go"]
       }
-    }
+    },
+    "cSpell.userWords": [
+      "Isort",
+      "anyio",
+      "gopls",
+      "gtin",
+      "markdownlint",
+      "pylint",
+      "pyproject",
+      "pyright",
+      "venv"
+    ]
 }

@@ -2,20 +2,12 @@ set encoding=utf-8
 set number
 set noswapfile
 set clipboard=unnamed
-set spell
-set spelllang=en
-set spellfile=$HOME/.config/nvim/spell/en.utf-8.add
 set mouse=
 set cursorline
 set cursorlineopt=number
 set nocompatible
 filetype plugin on
 syntax on
-
-" True Colors
-set termguicolors
-let &t_8f = "\<Esc>[38;2;%lu;%lu;%lum"
-let &t_8b = "\<Esc>[48;2;%lu;%lu;%lum"
 
 set background=dark
 
