@@ -6,8 +6,14 @@
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
   "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
+  "pyright.organizeimports.provider": "isort",
   "yaml.format.enable": true,
-  "coc.preferences.rootPatterns": [".git", "pyproject.toml", "setup.py", ".env"],
+  "coc.preferences.rootPatterns": [
+    ".git",
+    "pyproject.toml",
+    "setup.py",
+    ".env"
+  ],
   "coc.preferences.formatOnSaveFiletypes": ["python", "go", "yaml"],
   "coc.preferences.willSaveHandlerTimeout": 3000,
   "diagnostic.checkCurrentLine": true,
@@ -25,17 +31,25 @@
       "rootPatterns": ["go.mod", ".vim/", ".git/", ".hg/"],
       "trace.server": "verbose",
       "filetypes": ["go"]
-      }
-    },
-    "cSpell.userWords": [
-      "Isort",
-      "anyio",
-      "gopls",
-      "gtin",
-      "markdownlint",
-      "pylint",
-      "pyproject",
-      "pyright",
-      "venv"
-    ]
+    }
+  },
+  "cSpell.userWords": [
+    "Isort",
+    "anyio",
+    "asyncio",
+    "gopls",
+    "gtin",
+    "markdownlint",
+    "organizeimports",
+    "pylint",
+    "pyproject",
+    "pyright",
+    "qlty",
+    "sasl",
+    "statsd",
+    "strtobool",
+    "structlog",
+    "uvicorn",
+    "venv"
+  ]
 }
