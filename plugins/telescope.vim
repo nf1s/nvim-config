@@ -2,9 +2,11 @@
 lua << EOF
 require('telescope').setup {
   defaults = {
+	layout_strategy = "vertical",
     layout_config = {
-      vertical = { width = 0.9 },
+      vertical = { width = 0.75 },
       horizontal = { width = 0.9 },
+	  prompt_position = "top",
 		}
 	},
   extensions = {
@@ -17,12 +19,12 @@ require('telescope').setup {
     coc = {
         prefer_locations = true, -- always use Telescope locations to preview definitions/declarations/implementations etc
     }
-
   }
 }
 require('telescope').load_extension('fzf')
 require('telescope').load_extension('coc')
+
+vim.api.nvim_set_keymap('n', '<leader>f', '<cmd>Telescope find_files hidden=true<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>g', '<cmd>Telescope live_grep hidden=true<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>r', '<cmd>Telescope coc references<CR>', { noremap = true })
 EOF
-nnoremap <leader>f <cmd>Telescope find_files hidden=true layout_strategy=vertical<cr>
-nnoremap <leader>g <cmd>Telescope live_grep hidden=true layout_strategy=vertical<cr>
-nnoremap <leader>r <cmd>Telescope coc references layout_strategy=vertical<cr>

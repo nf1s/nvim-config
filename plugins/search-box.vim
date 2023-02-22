@@ -12,8 +12,8 @@ require('searchbox').setup({
   popup = {
     relative = 'editor',
     position = {
-      row = '35%',
-      col = '40%',
+      row = '50%',
+      col = '50%',
     },
 	size = {
       width = '60%',

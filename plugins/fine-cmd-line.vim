@@ -8,7 +8,7 @@ require('fine-cmdline').setup({
   popup = {
     relative = 'editor',
     position = {
-      row = '35%',
+      row = '50%',
       col = '50%',
     },
     size = {
