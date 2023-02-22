@@ -6,7 +6,6 @@ set mouse=
 set cursorline
 set cursorlineopt=number
 set nocompatible
-filetype plugin on
 syntax on
 
 set background=dark
@@ -20,18 +19,18 @@ let g:indent_guides_enable_on_vim_startup = 1
 au BufNewFile,BufRead *.js,*.jsx,*.html,*.json,*.css,*.j2,*jinja2,*.wiki,*.tmpl,*.md,Makefile,Justfile,*zsh,*.sh set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
 au BufNewFile,BufRead *.vim,*.tmpl set tabstop=4 softtabstop=4 shiftwidth=4
 
-nmap <C-_> :split<Esc>
-nmap <C-i> :vert split<Esc>
+nmap <C-_> <cmd>split<CR>
+nmap <C-i> <cmd>vert split<CR>
 
 nmap œ o<Esc>
 nmap Œ O<Esc>
-nmap <A-Up> :m-2<CR>
-nmap <A-Down> :m+1<CR>
-nmap <leader>y :%y<CR>
-nmap <leader><leader> :w<CR>
-nmap <leader>q :qa<CR>
-nmap <leader>t :tabn<CR>
-nmap <leader>T :tabp<CR>
+nmap <A-Up> <cmd>m-2<CR>
+nmap <A-Down> <cmd>m+1<CR>
+nmap <leader>y <cmd>%y<CR>
+nmap <leader><leader> <cmd>w<CR>
+nmap <leader>q <cmd>qa<CR>
+nmap <leader>t <cmd>tabn<CR>
+nmap <leader>T <cmd>tabp<CR>
 
 "Reflow current line
 map Q gqq
