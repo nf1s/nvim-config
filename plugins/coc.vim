@@ -29,7 +29,7 @@ nmap <silent><leader>d <Plug>(coc-definition)
 nmap <silent><leader>w  <Plug>(coc-type-definition)
 nmap <silent><leader>i <Plug>(coc-implementation)
 nmap <silent><leader>r <Plug>(coc-references)
-nmap <leader>e <Plug>(coc-rename)
+nmap <silent><leader>e <Plug>(coc-rename)
 
 vmap <leader>a <Plug>(coc-codeaction-selected)
 nmap <leader>a <Plug>(coc-codeaction-selected)
