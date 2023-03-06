@@ -18,7 +18,7 @@ let mapleader=" "
 let g:indent_guides_enable_on_vim_startup = 1
 
 au BufNewFile,BufRead *.js,*.jsx,*.html,*.json,*.css,*.j2,*jinja2,*.wiki,*.tmpl,*.md,Makefile,Justfile,*zsh,*.sh set tabstop=2 softtabstop=2 shiftwidth=2 expandtab
-au BufNewFile,BufRead *.vim,*.tmpl set tabstop=4 softtabstop=4 shiftwidth=4
+au BufNewFile,BufRead *.vim,*.tmpl,Justfile set tabstop=4 softtabstop=4 shiftwidth=4
 
 nmap <C-_> <cmd>split<CR>
 nmap <C-i> <cmd>vert split<CR>

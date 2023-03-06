@@ -19,10 +19,12 @@ inoremap <expr> <cr> coc#pum#visible() ? coc#pum#confirm() : "\<CR>"
 command! -nargs=0 Prettier :CocCommand prettier.formatFile
 command! -nargs=0 Isort :CocCommand pyright.organizeimports
 command! -nargs=0 MdFix :CocCommand markdownlint.fixAll
+command! -nargs=0 JustFmt :!just --fmt --unstable
 
 autocmd BufWritePost *.py :silent !Isort %
 autocmd BufWritePost *.js,*.ts,*.json,*.yaml :silent !Prettier %
 autocmd BufWritePost *.md :silent !MdFix %
+autocmd BufWritePre Justfile :silent !JustFmt %
 autocmd BufWritePre *.go  :silent call CocAction('runCommand', 'editor.action.organizeImport')
 
 nmap <silent><leader>d <Plug>(coc-definition)
