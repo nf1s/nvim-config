@@ -6,6 +6,7 @@ set mouse=
 set cursorline
 set cursorlineopt=number
 set nocompatible
+set relativenumber
 
 syntax on
 

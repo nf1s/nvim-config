@@ -53,6 +53,9 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 " Vim just
 Plug 'NoahTheDuke/vim-just'
 
+" Vim easy replace
+Plug 'kqito/vim-easy-replace'
+
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
