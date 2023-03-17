@@ -5,8 +5,8 @@
   "python.linting.pylintEnabled": false,
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
-  "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
   "pyright.organizeimports.provider": "isort",
+  "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
   "yaml.format.enable": true,
   "coc.preferences.rootPatterns": [
     ".git",
@@ -43,9 +43,12 @@
     }
   },
   "cSpell.userWords": [
+    "BEEZUP",
     "Heikemen",
     "Isort",
     "Munif",
+    "OCTOPIA",
+    "SELLO",
     "Sanic",
     "Typer",
     "Vesuna",
