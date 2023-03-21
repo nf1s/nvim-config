@@ -7,6 +7,8 @@ set cursorline
 set cursorlineopt=number
 set nocompatible
 set relativenumber
+set hlsearch
+set incsearch
 
 syntax on
 

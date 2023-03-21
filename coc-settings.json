@@ -6,7 +6,8 @@
   "python.linting.flake8Enabled": true,
   "python.linting.enabled": true,
   "pyright.organizeimports.provider": "isort",
-  "python.sortImports.path": "${workspaceFolder}/.venv/bin/isort",
+  "pyright.organizeimports.path": "${workspaceFolder}/.venv/bin/isort",
+  "pyright.organizeImport.args": ["--profile", "black"],
   "yaml.format.enable": true,
   "coc.preferences.rootPatterns": [
     ".git",
@@ -14,7 +15,7 @@
     "setup.py",
     ".env"
   ],
-  "coc.preferences.formatOnSaveFiletypes": ["python", "go", "yaml"],
+  "coc.preferences.formatOnSaveFiletypes": ["python", "go", "yaml", "json"],
   "coc.preferences.willSaveHandlerTimeout": 3000,
   "diagnostic.checkCurrentLine": true,
   "diagnostic.errorSign": "✖",
@@ -23,12 +24,12 @@
   "diagnostic.hintSign": "○",
   "suggest.floatConfig": {
     "border": true,
-    "rounded": true,
+    "rounded": true
   },
   "diagnostic.floatConfig": {
     "border": true,
     "rounded": true,
-    "borderhighlight": "WarningMsg",
+    "borderhighlight": "WarningMsg"
   },
   "markdownlint.config": {
     "default": true,
@@ -43,6 +44,7 @@
     }
   },
   "cSpell.userWords": [
+    "BBAN",
     "BEEZUP",
     "Heikemen",
     "Isort",
@@ -62,6 +64,7 @@
     "gopls",
     "gtin",
     "hashivim",
+    "iban",
     "kyazdani",
     "levouh",
     "lxml",
