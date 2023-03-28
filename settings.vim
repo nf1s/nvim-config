@@ -9,7 +9,7 @@ set nocompatible
 set relativenumber
 set hlsearch
 set incsearch
-
+filetype plugin on
 syntax on
 
 set background=dark

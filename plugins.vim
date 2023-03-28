@@ -22,9 +22,6 @@ Plug 'levouh/tint.nvim'
 " Vim session and .undodir manager
 Plug 'thaerkh/vim-workspace'
 
-" Vimwiki
-Plug 'vimwiki/vimwiki'
-
 " Highlight Yank
 Plug 'machakann/vim-highlightedyank'
 
@@ -52,9 +49,6 @@ Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'}
 
 " Vim just
 Plug 'NoahTheDuke/vim-just'
-
-" Vim easy replace
-Plug 'kqito/vim-easy-replace'
 
 " Telescope
 Plug 'nvim-lua/plenary.nvim'
