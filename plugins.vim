@@ -22,6 +22,9 @@ Plug 'levouh/tint.nvim'
 " Vim session and .undodir manager
 Plug 'thaerkh/vim-workspace'
 
+" Vimwiki
+Plug 'vimwiki/vimwiki'
+
 " Highlight Yank
 Plug 'machakann/vim-highlightedyank'
 
