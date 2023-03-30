@@ -14,15 +14,15 @@ require('fine-cmdline').setup({
     size = {
       width = '60%',
     },
-      style = 'rounded',
     border = {
+      style = 'rounded',
       text = {
         top = ' command ',
-        top_align = 'left',
+		top_align = 'left',
       },
     },
     win_options = {
-      winhighlight = 'Normal:Normal,FloatBorder:Normal',
+		winhighlight = 'Normal:Normal,FloatBorder:ErrorMsg',
     },
   },
 })

@@ -19,14 +19,14 @@ require('searchbox').setup({
       width = '60%',
     },
     border = {
-      style = 'rounded',
+	  style = 'rounded',
       text = {
         top = ' Search ',
         top_align = 'left',
       },
     },
     win_options = {
-      winhighlight = 'Normal:Normal,FloatBorder:Normal',
+      winhighlight = 'Normal:Normal,FloatBorder:WarningMsg',
     },
   },
 })
