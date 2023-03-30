@@ -23,7 +23,7 @@ Plug 'levouh/tint.nvim'
 Plug 'thaerkh/vim-workspace'
 
 " Vimwiki
-Plug 'vimwiki/vimwiki'
+Plug 'vimwiki/vimwiki', {'branch': 'dev'}
 
 " Highlight Yank
 Plug 'machakann/vim-highlightedyank'
@@ -34,7 +34,7 @@ Plug 'dhruvasagar/vim-table-mode'
 " Nerd Commenter
 Plug 'scrooloose/nerdcommenter'
 
-" devicons -> file icons
+" Devicons -> file icons
 Plug 'ryanoasis/vim-devicons'
 Plug 'kyazdani42/nvim-web-devicons'
 
@@ -63,4 +63,8 @@ Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
 Plug 'MunifTanjim/nui.nvim'
 Plug 'VonHeikemen/fine-cmdline.nvim'
 Plug 'VonHeikemen/searchbox.nvim'
+
+" ChatGPT
+Plug 'jackMort/ChatGPT.nvim'
+
 call plug#end()
