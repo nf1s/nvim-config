@@ -23,7 +23,7 @@ Plug 'levouh/tint.nvim'
 Plug 'thaerkh/vim-workspace'
 
 " Vimwiki
-Plug 'vimwiki/vimwiki', {'branch': 'dev'}
+Plug 'vimwiki/vimwiki'
 
 " Highlight Yank
 Plug 'machakann/vim-highlightedyank'

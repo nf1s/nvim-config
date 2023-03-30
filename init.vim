@@ -18,5 +18,5 @@ runtime plugins/vim-markdown-preview.vim
 runtime plugins/vim-pydocstring.vim
 runtime plugins/telescope.vim
 runtime plugins/treesitter.vim
-runtime plugins/rose-pine.vim
 runtime plugins/chat-gpt.vim
+runtime plugins/rose-pine.vim
