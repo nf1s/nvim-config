@@ -58,6 +58,7 @@ Plug 'nvim-lua/plenary.nvim'
 Plug 'nvim-telescope/telescope.nvim'
 Plug 'fannheyward/telescope-coc.nvim'
 Plug 'nvim-telescope/telescope-fzf-native.nvim', { 'do': 'make' }
+Plug 'AckslD/nvim-neoclip.lua'
 
 " Fine cmd Line
 Plug 'MunifTanjim/nui.nvim'

@@ -24,7 +24,11 @@ require('telescope').setup {
 require('telescope').load_extension('fzf')
 require('telescope').load_extension('coc')
 
+require('neoclip').setup()
+require('telescope').load_extension('neoclip')
+
 vim.api.nvim_set_keymap('n', '<leader>f', '<cmd>Telescope find_files hidden=true<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>g', '<cmd>Telescope live_grep hidden=true<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<leader>r', '<cmd>Telescope coc references<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<leader>n', '<cmd>Telescope neoclip unnamed<CR>', { noremap = true })
 EOF
