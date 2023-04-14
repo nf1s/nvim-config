@@ -23,6 +23,7 @@ require('telescope').setup {
 }
 require('telescope').load_extension('fzf')
 require('telescope').load_extension('coc')
+require('telescope').load_extension('media_files')
 
 require('neoclip').setup()
 require('telescope').load_extension('neoclip')
