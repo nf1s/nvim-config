@@ -81,6 +81,7 @@
     "markdownlint",
     "minikube",
     "neoclide",
+    "noack",
     "onupdate",
     "organizeimports",
     "pascalize",
