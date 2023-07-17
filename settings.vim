@@ -17,10 +17,10 @@ set background=dark
 hi CursorLineNr guifg=#af00af
 
 xnoremap r "_dP
-nnoremap x "_x
-nnoremap d "_d
-nnoremap D "_D
-vnoremap d "_d
+"nnoremap x "_x
+"nnoremap d "_d
+"nnoremap D "_D
+"vnoremap d "_d
 
 let mapleader=" "
 let g:indent_guides_enable_on_vim_startup = 1

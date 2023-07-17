@@ -66,7 +66,4 @@ Plug 'MunifTanjim/nui.nvim'
 Plug 'VonHeikemen/fine-cmdline.nvim'
 Plug 'VonHeikemen/searchbox.nvim'
 
-" ChatGPT
-Plug 'jackMort/ChatGPT.nvim'
-
 call plug#end()

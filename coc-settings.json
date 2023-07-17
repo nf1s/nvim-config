@@ -54,6 +54,7 @@
     "Vesuna",
     "anyio",
     "asdict",
+    "astext",
     "asyncio",
     "borderhighlight",
     "chatgpt",
