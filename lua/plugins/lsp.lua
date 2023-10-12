@@ -70,6 +70,8 @@ return {
       local bufopts = { noremap = true, silent = true, buffer = bufnr }
       vim.keymap.set("n", "<leader>e", vim.lsp.buf.rename, bufopts)
       vim.keymap.set("n", "<leader>d", vim.lsp.buf.definition, bufopts)
+      vim.keymap.set("n", "<leader>i", vim.lsp.buf.implementation, bufopts)
+      vim.keymap.set("n", "<leader>r", require("telescope.builtin").lsp_references, bufopts)
       vim.keymap.set({ "n", "v" }, "<leader>a", vim.lsp.buf.code_action, bufopts)
       vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, bufopts)
       require("completion").on_attach(client)
