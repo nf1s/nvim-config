@@ -25,6 +25,9 @@ Plug 'thaerkh/vim-workspace'
 " Vimwiki
 Plug 'vimwiki/vimwiki'
 
+" Indent Scope
+Plug 'echasnovski/mini.indentscope', { 'branch': 'stable' }
+
 " Highlight Yank
 Plug 'machakann/vim-highlightedyank'
 
