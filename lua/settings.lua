@@ -10,8 +10,8 @@ opt.cursorlineopt = "number"
 opt.relativenumber = true
 opt.hlsearch = true
 opt.incsearch = true
-opt.background = "dark"
 
+vim.o.background = "dark"
 vim.o.shada = ""
 
 -- Define highlighting for CursorLineNr using vim.cmd
@@ -29,24 +29,16 @@ vim.g.mapleader = ' '
 vim.g.indent_guides_enable_on_vim_startup = 1
 
 
--- Ansible file type
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
-  pattern = "*/roles/*.y*ml",
-  command = "set filetype=yaml.ansible",
+  pattern = "*.js,*.jsx,*.html,*.json,*.css,*.j2,*.jinja2,*.wiki,*.tmpl,*.md,Makefile,Justfile,*.zsh,*.sh",
+  command = "set tabstop=2 softtabstop=2 shiftwidth=2 expandtab",
 })
 
--- Github Actions file type
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
-  pattern = "*/.github/*.y*ml",
-  command = "set filetype=yaml.github",
+  pattern = "*lua,*.vim,*.tmpl,Justfile",
+  command = "set tabstop=4 softtabstop=4 shiftwidth=4",
 })
 
-
--- Justfile
-vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
-  pattern = "[[\v(Justfile|justfile|JUSTFILE)]]",
-  command = "set filetype=just",
-})
 
 
 -- highlight yanked text for 200ms using the "Visual" highlight group
