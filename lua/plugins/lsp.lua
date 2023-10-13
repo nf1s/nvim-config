@@ -153,7 +153,7 @@ return {
     local capabilities = require("cmp_nvim_lsp").default_capabilities()
     local lspconfig = require("lspconfig")
 
-    local servers = { "rust_analyzer", "pyright" }
+    local servers = { "rust_analyzer", "pyright", "gopls" }
     for _, lsp in ipairs(servers) do
       lspconfig[lsp].setup({
         capabilities = capabilities,
@@ -161,9 +161,13 @@ return {
     end
 
     -- Lsp servers --
+    -- go --
+    lspconfig.gopls.setup({
+      capabilities = capabilities,
+      on_attach = on_attach,
+    })
 
     -- rust --
-
     lspconfig.rust_analyzer.setup({
       settings = {
         ["rust-analyzer"] = {
@@ -187,12 +191,6 @@ return {
       },
       capabilities = capabilities,
       on_attach = on_attach,
-    })
-
-    -- wgsl --
-    lspconfig.wgsl_analyzer.setup({
-      on_attach = on_attach,
-      capabilities = capabilities,
     })
 
     -- Python --
