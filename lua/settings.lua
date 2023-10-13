@@ -30,12 +30,12 @@ vim.g.indent_guides_enable_on_vim_startup = 1
 
 
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
-  pattern = "*.js,*.jsx,*.html,*.json,*.css,*.j2,*.jinja2,*.wiki,*.tmpl,*.md,Makefile,Justfile,*.zsh,*.sh",
+  pattern = "*lua,*.js,*.jsx,*.html,*.json,*.css,*.j2,*.jinja2,*.wiki,*.tmpl,*.md,Makefile,Justfile,*.zsh,*.sh",
   command = "set tabstop=2 softtabstop=2 shiftwidth=2 expandtab",
 })
 
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
-  pattern = "*lua,*.vim,*.tmpl,Justfile",
+  pattern = "*.vim,*.tmpl,Justfile",
   command = "set tabstop=4 softtabstop=4 shiftwidth=4",
 })
 
