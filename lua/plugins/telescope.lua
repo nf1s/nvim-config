@@ -8,6 +8,22 @@ return {
   ,
   config = function()
 	require('telescope').setup {
+    pickers = {
+      find_files = {
+        find_command = {
+          "rg",
+          "--files",
+          "--hidden",
+          "--follow",
+          "-g",
+          "!.git",
+          "-g",
+          "!node_modules",
+          "-g",
+          "!.venv",
+        },
+      },
+    },
 	  defaults = {
 		layout_strategy = "vertical",
     layout_config = {
