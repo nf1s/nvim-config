@@ -29,5 +29,6 @@
   "searchbox.nvim": { "branch": "main", "commit": "110949af8963185b4e732b45ae57beb731bfcede" },
   "telescope-fzf-native.nvim": { "branch": "main", "commit": "6c921ca12321edaa773e324ef64ea301a1d0da62" },
   "telescope.nvim": { "branch": "master", "commit": "54930e1abfc94409e1bb9266e752ef8379008592" },
-  "tint.nvim": { "branch": "master", "commit": "862835626941d263466754b9c8e2ce2cb004f5ac" }
+  "tint.nvim": { "branch": "master", "commit": "862835626941d263466754b9c8e2ce2cb004f5ac" },
+  "wildfire.nvim": { "branch": "master", "commit": "1729faca1c6ae34520a6e531983a3737d3654ee1" }
 }
