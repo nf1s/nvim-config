@@ -14,12 +14,8 @@ opt.incsearch = true
 vim.o.background = "dark"
 vim.o.shada = ""
 
--- Define highlighting for CursorLineNr using vim.cmd
-vim.cmd('highlight CursorLineNr guifg=#af00af')
-
 -- Create a visual mode key mapping for xnoremap
 vim.api.nvim_set_keymap('x', 'r', '"_dP', { noremap = true })
-
 
 -- Highlights
 vim.cmd("filetype plugin on")
@@ -40,11 +36,10 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
 })
 
 
-
--- highlight yanked text for 200ms using the "Visual" highlight group
+-- highlight yanked text for 300ms using the "Visual" highlight group
 vim.cmd([[
 augroup highlight_yank
 autocmd!
-au TextYankPost * silent! lua vim.highlight.on_yank({higroup="Visual", timeout=200})
+au TextYankPost * silent! lua vim.highlight.on_yank({higroup="Visual", timeout=300})
 augroup END
 ]])
