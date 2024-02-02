@@ -31,7 +31,7 @@ vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
 })
 
 vim.api.nvim_create_autocmd({ "BufNewFile", "BufRead" }, {
-  pattern = "*.vim,*.tmpl,Justfile",
+  pattern = "*.vim",
   command = "set tabstop=4 softtabstop=4 shiftwidth=4",
 })
 
