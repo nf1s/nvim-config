@@ -213,5 +213,7 @@ return {
 
     -- Terraform --
     lspconfig.terraformls.setup({})
+
+    lspconfig.typos_lsp.setup({})
   end,
 }
