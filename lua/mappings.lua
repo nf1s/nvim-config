@@ -17,3 +17,5 @@ vim.api.nvim_set_keymap('n', '<leader>T', ':tabp<CR>', { noremap = true })
 -- Mapping for reflowing lines
 vim.api.nvim_set_keymap('n', 'Q', 'gqq', { noremap = true })
 vim.api.nvim_set_keymap('x', 'Q', 'gqq', { noremap = true })
+
+vim.api.nvim_set_keymap('n', '<C-p>', ':MarkdownPreview<CR>', { noremap = true, silent = true })
