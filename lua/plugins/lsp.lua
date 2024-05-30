@@ -71,7 +71,7 @@ return {
       vim.keymap.set("n", "<leader>r", require("telescope.builtin").lsp_references, bufopts)
       vim.keymap.set({ "n", "v" }, "<leader>a", vim.lsp.buf.code_action, bufopts)
       vim.keymap.set("n", "<leader>h", vim.lsp.buf.hover, bufopts)
-      require("completion").on_attach(client)
+      -- No need for `require("completion").on_attach(client)` as nvim-cmp handles completion
     end
 
     -- Completion --
